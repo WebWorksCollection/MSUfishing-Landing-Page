@@ -14,11 +14,11 @@
       
   .parallax1 {
 
-      background: url("pictures/eye.jpg");
+      background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.2)), url("pictures/eye.jpg");
 
       height: 100%;  
 
-      background-attachment: fixed; 
+      background-attachment: scroll; 
       background-position: center;
       background-repeat: no-repeat; 
       background-size: cover; 
@@ -31,12 +31,15 @@
       padding: 60px 60px;
   }
   .bg-1 {
-      background: #2d2d30;
+      /*background: #2d2d30;*/
+      background-size: auto;
+      background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,1)), url();
+      background-repeat: no-repeat;
   }
   .bg-2 {
       
       background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.5)), url(pictures/BK1.jpg);
-      background-repeat: no-repeat;
+      background-repeat: repeat;
   }
       .bg-2 p{
           padding: 15px;
@@ -50,13 +53,13 @@
       color: #777;
   }
   .navbar {
-      font-family: Montserrat, sans-serif;
+      font-family: Montserrat, inherit;
       margin-bottom: 0;
       background-color: black;
       border: 0;
       font-size: 11px !important;
       letter-spacing: 4px;
-      opacity: 0.7;
+      opacity: 0.9;
   }
   .navbar li a, .navbar .navbar-brand { 
       color: white !important;
@@ -102,7 +105,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Michigan State</a>
+      <a class="navbar-brand" href="#myPage">Michigan State Fishing</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -129,7 +132,7 @@
             
             <div class="col-sm-6">
           <img src="pictures/group_pic_sparty.jpg" alt="event" width="100%" height="100%" class="img-responsive">
-            <p>Group Pic of the people </p>      
+            <p><!--put picture in about desc here--> </p>      
             </div>
             
             <!--div class="col-sm-4">
@@ -219,7 +222,6 @@
           <img src="pictures/BK1.jpg" alt="event" width="400" height="300" class="img-responsive">
             <p>PRADCO Fishing</p> 
       </div>
-        
     </div>
   </div>
 </div>
