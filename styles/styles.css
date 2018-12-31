@@ -1,0 +1,115 @@
+.parallax1 {
+
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url("../pictures/group_pic_sparty.jpg");
+
+    height: 100%;
+
+    background-attachment: local;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: white;
+}
+
+.container {
+    padding: 60px 60px;
+}
+
+.bg-1 {
+    /*background: #2d2d30;*/
+    background-size: auto;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 1)), url();
+    background-repeat: no-repeat;
+}
+
+.bg-2 {
+
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), url(../pictures/MSU_Beaumont_Tower_1.jpg);
+    background-repeat: space;
+}
+
+.bg-2 p {
+    padding: 15px;
+}
+
+.bg-3 {
+
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(../pictures/msu_campus.jpg);
+    background-repeat: repeat;
+}
+
+.bg-4 {
+
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url();
+    background-repeat: space;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-bottom: 5px;
+}
+
+img-circle {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+}
+
+.nav-tabs li a {
+    color: #777;
+}
+
+.navbar {
+    font-family: Montserrat, inherit;
+    margin-bottom: 0;
+    background-color: black;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+.navbar-nav li.active a {
+    color: black !important;
+
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+
+footer a {
+    color: white;
+
+}
+
+footer a:hover {
+    color: red;
+}
+
+ul#menu li {
+    display: inline;
+}
