@@ -56,6 +56,14 @@ h2 {
     padding-bottom: 5px;
 }
 
+.maxHeightBoardDiv {
+    height: 400px;
+}
+
+.maxHeightSponsorDiv {
+    height: 350px;
+}
+
 img-circle {
     border-radius: 50%;
     object-fit: cover;
