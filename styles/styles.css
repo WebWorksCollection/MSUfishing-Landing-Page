@@ -19,6 +19,10 @@ body {
     padding: 60px 60px;
 }
 
+.container-margin-none {
+    padding: 0px 0px;
+}
+
 .bg-1 {
     /*background: #2d2d30;*/
     background-size: auto;
@@ -39,7 +43,8 @@ body {
 .bg-3 {
 
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(../pictures/msu_campus.jpg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg-4 {
@@ -56,16 +61,47 @@ h2 {
     padding-bottom: 5px;
 }
 
-.maxHeightBoardDiv {
-    height: 400px;
-}
-
-.maxHeightSponsorDiv {
-    height: 300px;
-}
-
 img-circle {
     border-radius: 50%;
+}
+
+.eboard-container {
+    width: 250px;
+    margin: 0px 10px 0px 10px;
+}
+
+.sponsor-container-premium {
+    width: 400px;
+    margin: 10px 10px 10px 10px;
+}
+
+.sponsor-container {
+    width: 200px;
+    margin: 10px 10px 10px 10px;
+}
+
+.wrap-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.flex-child-location {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 300px;
+    padding: 50px;
+}
+
+.flex-child-map {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-tabs li a {
@@ -117,54 +153,4 @@ footer a:hover {
 
 ul#menu li {
     display: inline;
-}
-
-#sponsor-container {
-    /* Prevent vertical gaps */
-    line-height: 0;
-
-    -webkit-column-count: 5;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 5;
-    -moz-column-gap: 0px;
-    column-count: 5;
-    column-gap: 0px;
-}
-
-#sponsor-container div {
-    /* Just in case there are inline attributes */
-    width: 100% !important;
-    height: auto !important;
-}
-
-@media (max-width: 1200px) {
-    #sponsor-container {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-    }
-}
-
-@media (max-width: 1000px) {
-    #sponsor-container {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-}
-
-@media (max-width: 800px) {
-    #sponsor-container {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-
-@media (max-width: 400px) {
-    #sponsor-container {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
 }
