@@ -113,6 +113,7 @@ img-circle {
     flex: 2;
     justify-content: center;
     align-items: center;
+    min-width: 300px;
 }
 
 .nav-tabs li a {
