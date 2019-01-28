@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-    // get posts
-    generate_insta_posts();
-
     // Initialize Tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -37,6 +34,8 @@ console.log(element)
 
 console.log('hallo')
 
+// get posts
+generate_insta_posts();
 
 //http://sulfaroa.pythonanywhere.com/msu-fishing-posts
 
@@ -55,7 +54,7 @@ function generate_insta_posts() {
         let pics = document.getElementById("photos");
 
         for (let i = 0; i < obj.data.length; i++) {
-            let previews = `<a href="` + obj.data[i].link + `" target="_blank"><img class = "instagram-picture" src="` + obj.data[i].images.standard_resolution.url + `"></a>`;
+            let previews = `<a href="` + obj.data[i].link + `" target="_blank" rel="noopener"><img class = "instagram-picture" src="` + obj.data[i].images.standard_resolution.url + `"></a>`;
             pics.insertAdjacentHTML('beforeend', previews);
         }
     }
