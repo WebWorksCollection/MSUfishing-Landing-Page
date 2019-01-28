@@ -11,8 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
@@ -21,7 +22,7 @@
     <script src="script.js"></script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage" data-spy="scroll" data-target=".navbar">
 
     <!--Keeps navbar at the top -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -38,7 +39,6 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home" data-toggle="collapse" data-target=".navbar-collapse.in">Home</a></li>
                     <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
-                    <li><a href="#meetings" data-toggle="collapse" data-target=".navbar-collapse.in">Meetings</a></li>
                     <li><a href="#pictures" data-toggle="collapse" data-target=".navbar-collapse.in">Pictures</a></li>
                     <li><a href="#leadership" data-toggle="collapse" data-target=".navbar-collapse.in">Leadership</a></li>
                     <li><a href="#sponsors" data-toggle="collapse" data-target=".navbar-collapse.in">Sponsors</a></li>
@@ -56,43 +56,58 @@
 
     <!-- About -->
     <div id="about" class="bg-4">
-        <div class="container text-center">
+        <div class="text-center" style="padding: 50px;">
             <div class="row">
 
-                <div class="col-sm-6 text-center">
-                    <img src="pictures/club_logo.jpg" class="img-responsive" alt="event" height="300" width="300">
+                <div class="col-sm-4">
+                    <img src="pictures/club_logo.jpg" class="img-responsive" alt="event" height="350" width="350" style="display: block; margin: auto;">
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <h2>Our Mission</h2>
                     <p>The purpose of this organization is to promote fishing opportunities for MSU students by providing a social network on campus for those who enjoy fishing. We strive to provide a welcoming community that caters to competitive and casual anglers by sponsoring tournaments (Like the MCBC) and arranging trips where members can become acquainted with types of fishing that they otherwise would not have been involved with.</p>
                     <p>Some of our biggest trips include steelhead fishing on the Pere Marquette, Ice fishing on Houghton Lake and the Saginaw Bay, and jigging for Whitefish on the Tawas Pier.</p>
                 </div>
 
+                <div class="col-sm-4">
+
+                    <h2>Meetings</h2>
+                    <h3>Location: 152 Natural Resources</h3>
+                    <h3>Time: 7:15PM</h3>
+                    <p>We are always accepting new members throughout the year, Come on out!</p>
+
+                </div>
+
             </div>
         </div>
     </div>
 
-    <div id="meetings" class="bg-4">
-        <div class="container-header"></div>
-        <div class="wrap-flex">
-
-            <div class="text-center flex-child-location">
-                <h1>Meetings</h1>
-                <h3>Location: 152 Natural Resources</h3>
-                <h3>Time: 7:15PM</h3>
-                <p>We are always accepting new members throughout the year, Come on out!</p>
-            </div>
+    <!--
+<div id="meetings" class="bg-4">
+    <div class="container-header"></div>
+    <div class="wrap-flex">
 
 
-            <div class="flex-child-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.60449167124426!2d-84.4786178947436!3d42.72266440791274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822c259da888d63%3A0x9f878af4f12b9007!2sNatural+Resources+Building!5e0!3m2!1sen!2sus!4v1548374478441" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-
+        <div class="text-center flex-child-location">
+            <h1>Meetings</h1>
+            <h3>Location: 152 Natural Resources</h3>
+            <h3>Time: 7:15PM</h3>
+            <p>We are always accepting new members throughout the year, Come on out!</p>
         </div>
-        <div class="container container-margin-none"></div>
+
+
+
+
+        <div class="flex-child-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364.60449167124426!2d-84.4786178947436!3d42.72266440791274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822c259da888d63%3A0x9f878af4f12b9007!2sNatural+Resources+Building!5e0!3m2!1sen!2sus!4v1548374478441" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
 
     </div>
+    <div class="container container-margin-none"></div>
+
+</div>
+-->
 
     <!--Upcoming Event -->
     <div id="pictures" class="bg-3">
@@ -101,6 +116,7 @@
 
             <section id="photos"></section>
         </div>
+        <div class="container-header"></div>
     </div>
 
     <div id="leadership" class="bg-4">

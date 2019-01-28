@@ -11,7 +11,7 @@
 }
 
 body {
-    font: 400 15px/1.8 Lato, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -34,31 +34,24 @@ body {
     background-repeat: no-repeat;
 }
 
-.bg-2 {
-
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), url(../pictures/MSU_Beaumont_Tower_1.jpg);
-    background-repeat: space;
-}
-
-.bg-2 p {
-    padding: 15px;
-}
-
 .bg-3 {
 
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url(../pictures/msu_campus.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3)), url(../pictures/MSU_Beaumont_Tower_1.jpg);
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-4 {
 
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url();
+    background: linear-gradient(#212121, #212121), url();
     background-repeat: space;
 }
 
 h1 {
     padding-bottom: 20px;
+    font-size: 60px;
 }
 
 h2 {
@@ -83,11 +76,11 @@ img-circle {
 
 .sponsor-container-premium {
     width: 400px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 25px 10px 25px;
 }
 
 .sponsor-container {
-    width: 200px;
+    width: 225px;
     margin: 10px 10px 10px 10px;
 }
 
@@ -123,7 +116,7 @@ img-circle {
 .navbar {
     font-family: Montserrat, inherit;
     margin-bottom: 0;
-    background-color: black;
+    background-color: #212121;
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
@@ -160,7 +153,7 @@ footer a {
 }
 
 footer a:hover {
-    color: red;
+    color: #18453B;
 }
 
 ul#menu li {
