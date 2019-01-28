@@ -4,8 +4,8 @@
 
     height: 100%;
 
-    background-attachment: local;
-    background-position: bottom;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
