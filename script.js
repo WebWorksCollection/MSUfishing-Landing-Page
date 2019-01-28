@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+    // get posts
+    generate_insta_posts();
+
     // Initialize Tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -32,3 +36,32 @@ var element = document.getElementsByClassName('container-fluid')
 console.log(element)
 
 console.log('hallo')
+
+
+//http://sulfaroa.pythonanywhere.com/msu-fishing-posts
+
+function generate_insta_posts() {
+
+    //var url = "http://sulfaroa.pythonanywhere.com/msu-fishing-posts";
+    var url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=4537786091.9981e4e.3f881e4a6531453e8bbb15177a2b3fc3&count=16";
+    var request = new XMLHttpRequest();
+
+
+    request.onload = function () {
+        obj = JSON.parse(this.responseText);
+        console.log(obj.data);
+
+        let pics_container = document.getElementById("pictures-container");
+        let pics = document.getElementById("photos");
+
+        for (let i = 0; i < obj.data.length; i++) {
+            let previews = `<a href="` + obj.data[i].link + `" target="_blank"><img class = "instagram-picture" src="` + obj.data[i].images.standard_resolution.url + `"></a>`;
+            pics.insertAdjacentHTML('beforeend', previews);
+        }
+    }
+    // Initialize a request
+    request.open('get', url)
+
+    // Send it
+    request.send()
+}
