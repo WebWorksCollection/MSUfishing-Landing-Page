@@ -41,7 +41,7 @@ generate_insta_posts();
 
 function generate_insta_posts() {
 
-    var url = "http://sulfaroa.pythonanywhere.com/msu-fishing-posts";
+    var url = "https://sulfaroa.pythonanywhere.com/msu-fishing-posts";
     var request = new XMLHttpRequest();
 
 
