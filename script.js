@@ -41,8 +41,7 @@ generate_insta_posts();
 
 function generate_insta_posts() {
 
-    //var url = "http://sulfaroa.pythonanywhere.com/msu-fishing-posts";
-    var url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=4537786091.9981e4e.3f881e4a6531453e8bbb15177a2b3fc3&count=16";
+    var url = "http://sulfaroa.pythonanywhere.com/msu-fishing-posts";
     var request = new XMLHttpRequest();
 
 
