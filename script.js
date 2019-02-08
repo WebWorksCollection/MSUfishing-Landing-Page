@@ -63,3 +63,8 @@ function generate_insta_posts() {
     // Send it
     request.send()
 }
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+});
+      
