@@ -1,0 +1,4 @@
+https://msufishing.org/sitemap.xml
+
+User-agent: *
+Disallow:
