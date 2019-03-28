@@ -1,3 +1,23 @@
+function generate_insta_posts() {
+
+    var url = "https://sulfaroa.pythonanywhere.com/msu-fishing-posts";
+
+    fetch(url)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            let obj = myJson;
+            let pics_container = document.getElementById("pictures-container");
+            let pics = document.getElementById("photos");
+
+            for (let i = 0; i < obj.data.length; i++) {
+                let previews = `<a href="` + obj.data[i].link + `" target="_blank" rel="noopener"><img class = "instagram-picture" src="` + obj.data[i].images.standard_resolution.url + `"></a>`;
+                pics.insertAdjacentHTML('beforeend', previews);
+            }
+        });
+}
+
 $(document).ready(function () {
 
     // Initialize Tooltip
@@ -28,38 +48,7 @@ $(document).ready(function () {
     });
 })
 
-var element = document.getElementsByClassName('container-fluid')
-//element.parentNode.removeChild(element)
-console.log(element)
-
 console.log('hallo')
 
 // get posts
 generate_insta_posts();
-
-//http://sulfaroa.pythonanywhere.com/msu-fishing-posts
-
-function generate_insta_posts() {
-
-    var url = "https://sulfaroa.pythonanywhere.com/msu-fishing-posts";
-    var request = new XMLHttpRequest();
-
-
-    request.onload = function () {
-        obj = JSON.parse(this.responseText);
-        console.log(obj.data);
-
-        let pics_container = document.getElementById("pictures-container");
-        let pics = document.getElementById("photos");
-
-        for (let i = 0; i < obj.data.length; i++) {
-            let previews = `<a href="` + obj.data[i].link + `" target="_blank" rel="noopener"><img class = "instagram-picture" src="` + obj.data[i].images.standard_resolution.url + `"></a>`;
-            pics.insertAdjacentHTML('beforeend', previews);
-        }
-    }
-    // Initialize a request
-    request.open('get', url)
-
-    // Send it
-    request.send()
-}
