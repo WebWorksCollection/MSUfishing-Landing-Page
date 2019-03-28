@@ -7,12 +7,11 @@ function generate_insta_posts() {
             return response.json();
         })
         .then(function (myJson) {
-            let obj = myJson;
             let pics_container = document.getElementById("pictures-container");
             let pics = document.getElementById("photos");
 
-            for (let i = 0; i < obj.data.length; i++) {
-                let previews = `<a href="` + obj.data[i].link + `" target="_blank" rel="noopener"><img class = "instagram-picture" src="` + obj.data[i].images.standard_resolution.url + `"></a>`;
+            for (let i = 0; i < myJson.data.length; i++) {
+                let previews = `<a href="` + myJson.data[i].link + `" target="_blank" rel="noopener"><img class = "instagram-picture" src="` + myJson.data[i].images.standard_resolution.url + `"></a>`;
                 pics.insertAdjacentHTML('beforeend', previews);
             }
         });
