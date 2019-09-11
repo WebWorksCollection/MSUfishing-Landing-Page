@@ -187,6 +187,7 @@ ul#menu li {
 #mc-embedded-subscribe {
     color: black;
     margin: 1em;
+    background-color: #ffffff;
 }
 
 @media (max-width: 1200px) {
