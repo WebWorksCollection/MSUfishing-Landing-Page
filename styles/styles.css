@@ -190,6 +190,13 @@ ul#menu li {
     background-color: #ffffff;
 }
 
+/* fix email form width  */
+input[type=email] {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
 @media (max-width: 1200px) {
     #photos {
         -moz-column-count: 4;
