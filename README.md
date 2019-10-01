@@ -9,6 +9,10 @@ This repository contains the source for the official Michigan State Fishing Club
 - [Instagram API](https://www.instagram.com/developer/) - to get and embed images from our instagram page
 - [Vanilla JS](http://vanilla-js.com/) - Just some regular client-side code to make API calls and generate containers in the DOM
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
 ## Link
 Check it out [here](https://msufishing.org)
 
